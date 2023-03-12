@@ -1,0 +1,53 @@
+/// Main Styles File
+/// Here we import all the global Styles files we need for our project.
+
+@import "styles/normalize.scss";
+@import "styles/root.scss";
+@import "styles/fonts.scss";
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #DDD;
+}
+
+#home-page {
+  display: flex;
+  flex-direction: column;
+  background-color: #FFF;
+  font-size: 24px, medium;
+  letter-spacing: 0px;
+  margin: auto;
+  border-radius: 10px;
+  margin-top: 5%;
+  width: 660px;
+  height: 750px;
+}
+
+p { 
+  color: #838383;
+}
+
+a {
+  color: #000;
+}
+
+.content {
+  margin: auto;
+  margin-top: 5px;
+  padding: 10px;
+
+}
+
+img {
+  border-radius: 10px;
+}
+
+@media (max-width: 400px) {
+  #home-page {
+    width: 350px;
+    height: 550px;
+  }
+  img {
+    width: 330px;
+  }
+}
